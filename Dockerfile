@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts-alpine
+FROM jenkins/jenkins:alpine-jdk11  
 USER root
 RUN apk update && apk add docker
 COPY docker-jenkins.sh /usr/local/bin/docker-jenkins.sh
